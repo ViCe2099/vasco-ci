@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  vascoapptest:
+    image: vascoapp:v1
+    build: .
+    container_came: vascoc1
+    ports:
+    - "2234:80"
+    restart: always
